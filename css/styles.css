@@ -1,0 +1,245 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.conteiner {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+.conteiner-header {
+  display: grid;
+  height: 56px;
+  background-color: #fff;
+  align-items: center;
+}
+.main-link {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  grid-template-rows: 40px;
+  padding-left: 8px;
+  column-gap: 8px;
+  align-items: center;
+}
+.header-main {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  letter-spacing: 0.02em;
+  color: #f07f2e;
+}
+
+.hero {
+  margin-bottom: 96px;
+}
+.hero-img {
+  border-radius: 16px;
+}
+.list-hero > a {
+  position: relative;
+}
+.order-list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+.conteiner-list {
+  position: absolute;
+  border-radius: 0 0 16px 16px;
+  background-color: rgba(18, 18, 22, 0.5);
+  padding: 12px 12px 12px 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.hero-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.articles {
+  display: grid;
+  row-gap: 96px;
+  margin-bottom: 80px;
+}
+.articles-order {
+  display: grid;
+  gap: 48px;
+}
+.articles-link {
+  display: grid;
+  gap: 20px;
+}
+.articles-main {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+}
+.articles-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #2c2c2c;
+}
+.socials-main {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.28571;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  margin-bottom: 24px;
+}
+.conteiner-svg {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #2f2f37;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-order {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 48px);
+  gap: 24px 8px;
+}
+.conteiner-link {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.social-list {
+  display: grid;
+  border-radius: 16px;
+  background-color: #f07f2e;
+  padding-left: 8px;
+}
+.social-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #2f2f37;
+}
+.social-list:nth-child(1) {
+  background-color: #d8def8;
+}
+.social-list:nth-child(2) {
+  background-color: #ffe8f1;
+}
+.social-list:nth-child(3) {
+  background-color: #fae8ea;
+}
+.social-list:nth-child(4) {
+  background-color: #e9f9f8;
+}
+.social-list:nth-child(5) {
+  background-color: #fffddc;
+}
+.social-list:nth-child(6) {
+  background-color: #f2eef8;
+}
+.icon-social {
+  fill: #2f2f37;
+}
+.video-main {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.28571;
+  letter-spacing: 0.02em;
+  color: #2c2c2c;
+  margin-bottom: 24px;
+}
+.conteiner-footer {
+  background-color: #ecf6ff;
+}
+@media (min-width: 768px) {
+  .conteiner-header {
+    height: 72px;
+  }
+  .conteiner-footer {
+    height: 72px;
+    align-content: center;
+  }
+  .order-list {
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .list-hero:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .articles-order {
+    gap: 36px;
+  }
+  .articles-link {
+    gap: 24px;
+    grid-template-columns: 264px 1fr;
+  }
+  .articles-main {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
+  .social-order {
+    gap: 24px;
+  }
+}
+@media (min-width: 1158px) {
+  .hero {
+    margin-bottom: 80px;
+  }
+  .articles {
+    grid-template-areas:
+      "a a s"
+      "a a s"
+      "a a v"
+      "a a .";
+    gap: 60px 24px;
+  }
+  .articles-order {
+    grid-area: a;
+  }
+  .social {
+    grid-area: s;
+  }
+  .video {
+    grid-area: v;
+  }
+}
